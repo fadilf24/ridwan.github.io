@@ -1,0 +1,85 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+ <img src="atas.jpg" style="width: 100%; height: 30%;">
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Garut</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Denpasar')">Denpasar</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Jakarta')">Jakarta</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Tasik</button>
+  <button class="w3-bar-item w3-button" onclick="openKota('Profil')">Profile</button>
+</div>
+
+<div id="Bandung" class="w3-container kota"  style="display:none">
+  <h2>Bandung</h2>
+  <img class="w3-animate-fading" src="bandung.jfif">
+   <p>Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.</p>
+</div>
+
+<div id="Garut" class="w3-container kota"  style="display:none">
+  <h2>Garut</h2>
+  <img class="w3-animate-bottom" src="garut.jfif">
+  <p>Dikenal dengan Julukan Kota Dodol, dan  jaman juga dikenal dengan Jeruk Garut atau Domba Garut</p>
+</div>
+
+<div id="Denpasar" class="w3-container kota"  style="display:none">
+   <h2>Denpasar</h2>
+   <img class="w3-animate-top" src="bali.jfif">
+   <p>Kota Denpasar adalah ibu kota dari provinsi Bali, Indonesia. </p>
+</div>
+
+<div id="Jakarta" class="w3-container kota"  style="display:none">
+   <h2>Jakarta</h2>
+   <img src="jakarta.jfif" class="w3-animate-bottom">
+   <p>Jakarta, atau secara resmi bernama Daerah Khusus Ibukota Jakarta adalah ibu kota negara dan 
+     kota terbesar di Indonesia.</p>
+</div>
+
+<div id="Tasik" class="w3-container kota"  style="display:none">
+  <h2>Tasik</h2>
+  <img src="tasik.jfif" class="w3-animate-zoom">
+  <p>Kota Tasikmalaya atau sering disingkat Tasik adalah salah satu kota yang berada di 
+    provinsi Jawa Barat, Indonesia.</p>
+</div>
+
+<div id="Profil" class="w3-container kota"  style="display:none">
+  <h2>Profile</h2>
+  <img src="profil.jpg" class="w3-animate-zoom" style="width: 50%;">
+  <p>
+  <table>
+    <tr>
+      <td>NIM</td>
+      <td>: 10121133</td>
+    </tr>
+    <tr>
+      <td>Nama</td>
+      <td>: Fadil Farhan Ridwan</td>
+    </tr>
+    <tr>
+      <td>Kelas </td>
+      <td>: IF 4</td>
+    </tr>
+  </table>
+  </p>
+</div>
+<script>
+function openKota(namaKota) {
+  var i;
+  var x = document.getElementsByClassName("kota");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";  
+  }
+  document.getElementById(namaKota).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
